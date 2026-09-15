@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Birthday Letter 💌</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HOME / OPENING SCREEN -->
+    <section id="home">
+
+        <div class="gift">🎁</div>
+
+        <div class="home">
+            <div class="corner top-left">🌸</div>
+            <div class="corner top-right">🎀</div>
+        </div>
+
+        <h1>Something For You Bal💗</h1>
+
+        <p>I made a little birthday surprise for you...</p>
+
+    </section>
+
+
+    <!-- PASSWORD SCREEN -->
+    <div class="lock-container" id="lockContainer">
+
+        
+
+        <div class="lock-icon">🔒</div>
+
+        <h1>Enter Password</h1>
+
+        <p>Enter the 4-digit code to unlock</p>
+
+        <input
+            type="password"
+            id="pinInput"
+            maxlength="4"
+            inputmode="numeric"
+            placeholder="••••"
+        >
+
+        <button onclick="unlock()">Unlock</button>
+
+        <p id="message"></p>
+
+    </div>
+
+
+    <!-- LETTER PAGE -->
+    <section id="letterPage">
+
+        <div class="paper">
+
+            <!-- Decorations -->
+            <div class="corner top-left">🌸</div>
+            <div class="corner top-right">🎀</div>
+            <div class="corner bottom-left">💗</div>
+            <div class="corner bottom-right">🌷</div>
+
+            <div class="top-decoration">
+                🎂 ✨ 💗 ✨ 🎂
+            </div>
+
+            <h2>Happy Birthday Arvee! 🎉</h2>
+
+            <div class="subtitle">
+                💌
+            </div>
+
+            <div class="divider">
+                ───── 💕 ─────
+            </div>
+
+
+            <!-- YOUR LETTER -->
+            <div class="letter">
+
+                <p>
+                    Dear <span class="name">Arvee</span>,
+                </p>
+
+                <p>
+                    Happy birthday! 🎂💗
+                </p>
+
+                <p>
+                    Happy birthday my love! I made this letter to you
+                    because today is a very special day to you.
+                </p>
+
+                <p>
+                    I hope you enjoy your birthday and spend it
+                    surrounded by people who make you happy.
+                    And I hope that you like my gift to you kahit
+                    ganon lang po yung nabigay ko sayo hehe.
+                    Don't worry po mag iipon po ako para makapunta jan
+                    and gagawa po tayo ng maraming memories together jan.
+                </p>
+
+                <p>
+                    Thank you for being someone special.
+                    I really appreciate having you in my life,
+                    and I'm happy that I got the chance to know you.
+                    And thank you din kasi kahit anong pagsubok
+                    ang ibigay satin ni Lord ay hindi ka sumusuko.
+                    Bal, thank you.
+                </p>
+
+                <p>
+                    Always take care of yourself and never forget
+                    how special you are. Keep smiling bal, and continue
+                    being the makulit and amazing person that you are.
+                    
+                </p>
+
+                <p>
+                    <strong>Happy Birthday!</strong> 🎉🎂
+                </p>
+
+                <p>
+                    I love you so much bal!🌷💗
+                </p>
+
+            </div>
+
+
+            <!-- BACK BUTTON -->
+            <button class="back-button" onclick="goBack()">
+                ← Back
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
