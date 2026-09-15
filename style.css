@@ -490,3 +490,73 @@ button:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
+#lockContainer input:focus {
+    border-color: #ff77a9;
+}
+
+
+/* Unlock button */
+
+#lockContainer button:not(.close-btn) {
+    width: 100%;
+    height: 55px;
+
+    margin-top: 20px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #ff70a5;
+    color: white;
+
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+#lockContainer button:not(.close-btn):hover {
+    background: #ff5c98;
+}
+
+
+/* =========================
+   X BUTTON
+========================= */
+
+.close-btn {
+    position: absolute;
+
+    top: 15px;
+    right: 18px;
+
+    width: auto !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+
+    color: #ff5c98 !important;
+
+    border: none !important;
+
+    font-size: 32px !important;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* Message */
+
+#message {
+    font-family: Arial, sans-serif;
+
+    margin-top: 15px !important;
+
+    font-size: 16px !important;
+    font-weight: bold;
+}
+
