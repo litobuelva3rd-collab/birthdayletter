@@ -98,3 +98,59 @@ function createManyHearts() {
 
 }
 
+/* =========================
+   PASSWORD
+========================= */
+
+const correctPIN = "0916";
+
+
+/* =========================
+   UNLOCK
+========================= */
+
+function unlock() {
+
+    const pin =
+        document.getElementById("pinInput").value;
+
+    const message =
+        document.getElementById("message");
+
+    if (pin === correctPIN) {
+
+        message.textContent =
+            "Correct! Unlocking...";
+
+        setTimeout(() => {
+
+            // Hide password box
+            document.getElementById("lockContainer")
+                .style.display = "none";
+
+            // Hide home screen
+            document.getElementById("home")
+                .style.display = "none";
+
+            // Show letter
+            document.getElementById("letterPage")
+                .style.display = "flex";
+
+            // Create floating hearts
+            createManyHearts();
+
+            // Go to top
+            window.scrollTo(0, 0);
+
+        }, 500);
+
+    } else {
+
+        message.textContent =
+            "❌ Wrong Password!";
+
+        document.getElementById("pinInput")
+            .value = "";
+
+    }
+}
